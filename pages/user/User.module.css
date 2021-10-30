@@ -1,0 +1,20 @@
+.user__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff971d;
+  color: #ffffff;
+  padding: 100px;
+  text-align: center;
+  width: 90%;
+}
+.user__info > h1 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .user__info {
+    padding: 20px;
+  }
+}

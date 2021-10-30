@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #ff971d;
+  box-shadow: 5px 5px 5px 5px rgb(236, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  color: #ffffff;
+}
+
+.navbar > h2 {
+  font-size: 30px;
+  cursor: pointer;
+}
+.navbar > button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffe8d6;
+  color: #ff971d;
+  border: none;
+  cursor: pointer;
+}
