@@ -31,6 +31,7 @@ const CreateUser = () => {
 
     // add to localStorage
     const users = JSON.parse(localStorage.getItem("users") || "[]");
+    // id : will be todays date and status by defalt kept active
     users.push({ id: Date.now(), status: "active", ...user });
     localStorage.setItem("users", JSON.stringify(users));
 
@@ -68,7 +69,7 @@ const CreateUser = () => {
       <Layout>
         <div className="row justify-content-center m-0">
           <div className="col-12 col-md-8 m-0">
-            <h1 className="text-center my-4">Create New Post</h1>
+            <h1 className="text-center my-4">Create New User</h1>
             {error && <div className="m-0 alert alert-danger">{error}</div>}
             <form>
               <div className="my-4">
@@ -116,7 +117,7 @@ const CreateUser = () => {
               </div>
               <div className="my-4">
                 <button className="btn__create__post" onClick={handleSubmit}>
-                  Create Post
+                  Create User
                 </button>
               </div>
             </form>

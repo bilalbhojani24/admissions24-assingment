@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <h2 onClick={() => router.push("/")}>admissions24</h2>
-      <button onClick={() => router.push("/create-user")}>Create Post</button>
+      <button onClick={() => router.push("/create-user")}>Create User</button>
     </nav>
   );
 };
